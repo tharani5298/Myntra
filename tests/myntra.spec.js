@@ -13,7 +13,7 @@
     let Price = priceList.map((price) => Number(price.replace(/[^0-9]/g, '')));
    let minPrice = Math.min(...Price)   
      console.log('Minimumprice ' + minPrice);
-     console.log('Total Products' + totalProductslist);
+     console.log('Total Products listed' + totalProductslist);
 
  })
 
