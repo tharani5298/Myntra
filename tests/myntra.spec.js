@@ -7,13 +7,13 @@
 
 
      const allPrices = page.locator('//li[@class="product-base"]/descendant::span[@class="product-discountedPrice"]');
-     await allPrices.first().waitFor({ timeout: 60000 });
+     await allPrices.first().waitFor({ timeout: 50000 });
     const totalProductslist = await allPrices.count();
    let priceList = await allPrices.allTextContents();
     let Price = priceList.map((price) => Number(price.replace(/[^0-9]/g, '')));
    let minPrice = Math.min(...Price)   
      console.log('Minimumprice ' + minPrice);
-     console.log('Total Products listed' + totalProductslist);
+     console.log('Total Products' + totalProductslist);
 
  })
 
